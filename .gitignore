@@ -1,18 +1,13 @@
-# Credentials and machine-specific environment
 .env
 .env.*
 !.env.example
 *.pem
 *.key
-# Python/runtime output
 __pycache__/
 *.py[cod]
 *.log
-sensor_samples/*
-!sensor_samples/.gitkeep
-flight_space.npz
-flight_space.json
-# Desktop screenshots may contain unrelated terminal content
+runtime/
+dist/
 *.png
 *.jpg
 *.jpeg
