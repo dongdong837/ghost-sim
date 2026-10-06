@@ -1,0 +1,58 @@
+<robot name="ghost_display">
+  <link name="base_link">
+    <visual name="ghost_body">
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.25" />
+      </geometry>
+      <material name="ghost_body">
+        <color rgba="0.65 0.9 1.0 0.8" />
+      </material>
+    </visual>
+    <visual name="left_eye">
+      <origin xyz="0.225 0.075 0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+      <material name="left_eye">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="left_pupil">
+      <origin xyz="0.253 0.075 0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.016" />
+      </geometry>
+      <material name="left_pupil">
+        <color rgba="0.025 0.04 0.10 1" />
+      </material>
+    </visual>
+    <visual name="right_eye">
+      <origin xyz="0.225 -0.075 0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.035" />
+      </geometry>
+      <material name="right_eye">
+        <color rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <visual name="right_pupil">
+      <origin xyz="0.253 -0.075 0.05" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.016" />
+      </geometry>
+      <material name="right_pupil">
+        <color rgba="0.025 0.04 0.10 1" />
+      </material>
+    </visual>
+    <visual name="mouth">
+      <origin xyz="0.245 0 -0.065" rpy="0 0 0" />
+      <geometry>
+        <sphere radius="0.018" />
+      </geometry>
+      <material name="mouth">
+        <color rgba="0.06 0.10 0.20 1" />
+      </material>
+    </visual>
+  </link>
+</robot>
